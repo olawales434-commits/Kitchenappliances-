@@ -1,8 +1,103 @@
-<h1>Welcome to Kitchen Picks</h1>
-<p>Helpful ideas for choosing kitchen products.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kitchen Picks</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #faf7f0;
+      color: #263b32;
+      line-height: 1.6;
+    }
+    header {
+      background: #315c49;
+      color: white;
+      padding: 22px 6%;
+    }
+    header strong { font-size: 25px; }
+    .hero {
+      padding: 50px 6%;
+      text-align: center;
+      background: #e7eee6;
+    }
+    h1 { font-size: 36px; line-height: 1.2; }
+    .hero p { max-width: 600px; margin: auto; }
+    main { max-width: 1050px; margin: auto; padding: 30px 6%; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+    }
+    .card {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 3px 15px #00000012;
+    }
+    .card img { width: 100%; height: 210px; object-fit: cover; }
+    .card div { padding: 18px; }
+    .card h3 { margin-top: 0; }
+    .about {
+      margin-top: 35px;
+      padding: 25px;
+      background: #e7eee6;
+      border-radius: 14px;
+    }
+    footer {
+      text-align: center;
+      padding: 24px;
+      background: #315c49;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header><strong>Kitchen Picks</strong></header>
 
-<h2>Choosing a blender</h2>
-<p>Think about what you make most often. A compact blender may suit smoothies, while a larger jug is useful for family portions. Look for one that is easy to clean.</p>
+  <section class="hero">
+    <h1>Make your kitchen work for you</h1>
+    <p>Simple ideas for choosing useful kitchen tools, from everyday essentials to appliances that make cooking easier.</p>
+  </section>
 
-<h2>Choosing a cutting board</h2>
-<p>Choose a board that fits your counter. Keep separate boards for raw meat and ready-to-eat foods, and wash them after every use.</p>
+  <main>
+    <h2>Explore kitchen essentials</h2>
+    <div class="cards">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1570222094114-d054a817e56b?auto=format&fit=crop&w=800&q=80" alt="Blender in a kitchen">
+        <div>
+          <h3>Blenders</h3>
+          <p>For smoothies, soups and sauces, consider the jug size, power and how easy the blender is to clean.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80" alt="Kitchen and cooking essentials">
+        <div>
+          <h3>Cookware</h3>
+          <p>Think about the meals you cook most often. Look for comfortable handles and pots and pans that suit your stove.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=800&q=80" alt="Kitchen space">
+        <div>
+          <h3>Kitchen tools</h3>
+          <p>Choose practical utensils that feel comfortable to use and are easy to wash and store.</p>
+        </div>
+      </article>
+    </div>
+
+    <section class="about">
+      <h2>Welcome to Kitchen Picks</h2>
+      <p>We share straightforward ideas to help you choose kitchen essentials for your home. Start with what you need, your available space and your budget.</p>
+    </section>
+  </main>
+
+  <footer>Kitchen Picks · Helpful ideas for your kitchen</footer>
+</body>
+
+</html>
